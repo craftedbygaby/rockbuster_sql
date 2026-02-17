@@ -1,0 +1,46 @@
+/* Film table summary statistics for key attributes */
+SELECT
+
+    /* Film ID summary */
+    MIN(film_id) AS film_id_min,         
+    MAX(film_id) AS film_id_max,        
+    AVG(film_id) AS film_id_avg,         
+    COUNT(film_id) AS film_id_count,    
+
+    /* Release year summary */
+    MIN(release_year) AS release_year_min,   
+    MAX(release_year) AS release_year_max, 
+    AVG(release_year) AS release_year_avg,  
+    COUNT(release_year) AS release_year_count,  
+
+    /* Language ID summary */
+    MIN(language_id) AS language_id_min, 
+    MAX(language_id) AS language_id_max,   
+    AVG(language_id) AS language_id_avg,   
+    COUNT(language_id) AS language_id_count, 
+
+    /* Rental duration summary */
+    MIN(rental_duration) AS rental_duration_min, 
+    MAX(rental_duration) AS rental_duration_max, 
+    AVG(rental_duration) AS rental_duration_avg, 
+    COUNT(film_id) AS rental_duration_count,     
+
+    /* Rental rate summary */
+    MIN(rental_rate) AS rental_rate_min,  
+    MAX(rental_rate) AS rental_rate_max,  
+    AVG(rental_rate) AS rental_rate_avg, 
+    COUNT(rental_rate) AS rental_rate_count, 
+
+    /* Film length summary */
+    MIN(length) AS length_min,             
+    MAX(length) AS length_max,             
+    AVG(length) AS length_avg,             
+    COUNT(length) AS length_count,      
+
+    /* Replacement cost summary */
+    MIN(replacement_cost) AS replacement_cost_min, 
+    MAX(replacement_cost) AS replacement_cost_max,
+    AVG(replacement_cost) AS replacement_cost_avg, 
+    COUNT(replacement_cost) AS replacement_cost_count 
+
+FROM film;  
